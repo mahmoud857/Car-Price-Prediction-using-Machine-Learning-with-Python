@@ -1,5 +1,5 @@
 import numpy as np
-import Joblib
+import joblib
 import streamlit as st
 from PIL import Image
 
