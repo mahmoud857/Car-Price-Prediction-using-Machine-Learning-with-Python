@@ -4,7 +4,7 @@ import streamlit as st
 from PIL import Image
 
 
-loading_model = Joblib.load(open("car_price_prediction_model", "rb"))
+loading_model = joblib.load(open("car_price_prediction_model", "rb"))
 
 def Car_Price_prediction(input_data):
     input_data_as_numpy_array = np.asarray(input_data)
