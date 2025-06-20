@@ -4,7 +4,7 @@ import streamlit as st
 from PIL import Image
 
 
-loading_model = pickle.load(open("F:\\ماشين ليرنج\\مشاريع ماشين ليرنج end to end\\Project 6 Car Price Prediction using Machine Learning with Python\\car_price_prediction_model", "rb"))
+loading_model = pickle.load(open("car_price_prediction_model", "rb"))
 
 def Car_Price_prediction(input_data):
     input_data_as_numpy_array = np.asarray(input_data)
@@ -18,7 +18,7 @@ def Car_Price_prediction(input_data):
 
 def main():
 
-    img=Image.open("F:\ماشين ليرنج\مشاريع ماشين ليرنج end to end\Project 6 Car Price Prediction using Machine Learning with Python\dataset-cover.jpg")
+    img=Image.open("dataset-cover.jpg")
     st.image(img, caption="Welcome To Car Price Prediction App", use_container_width=True)
     st.markdown("Welcome to the Car Price Prediction App — a tool designed to estimate car prices based on various features.")
     st.markdown("Simply fill in the required information and press 'Predict Car Price' to receive an instant prediction.")
